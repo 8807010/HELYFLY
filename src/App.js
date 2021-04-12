@@ -4,10 +4,12 @@ import Main from './components/blocks/main/Main';
 
 function App() {
   return (
+    <>
     <div className={s.App}>
       <Header/>
-      
+      <Main/>
     </div>
+    </>
   );
 }
 
