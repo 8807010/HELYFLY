@@ -1,0 +1,80 @@
+@import './../../../styles/sass/vars.scss';
+@import './../../../styles/sass/mixins.scss';
+
+.main {
+    background-image: url(./../../../assets/img/main-bg.jpg);
+    color: $primaryColor;
+    background-size: cover;
+    background-position: 62% center;
+    .container {
+        @extend %container;
+        .inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 655px;
+            @include media(sm) {
+                height: 840px;
+            }
+            // @media screen and (min-width: 768px){
+            //     height: 840px;
+            // }
+            
+            .title{
+                @include text(32px, 700, 39px); 
+                max-width: 247px;
+                margin-top: -5px;
+                span {
+                    color: $accentColor;
+                }
+                // @media screen and (min-width: 768px){
+                //     max-width: 596px;
+                //     font-size: 40px;
+                //     line-height: 49px;
+                // }
+                @include media(sm) {
+                    max-width: 596px;
+                    font-size: 40px;
+                    line-height: 49px;
+                }
+                // @media screen and (min-width: 1280px){
+                //     max-width: 887px;
+                //     width: 100%;
+                // }
+                @include media(md) {
+                    max-width: 887px;
+                    width: 100%;
+                }
+            }
+            .priceBox {
+                height: 93px;
+                width: 208px;
+                background-image: url(./../../../assets/img/price-box.svg);
+                background-repeat: no-repeat;
+                margin: 36px 0 14px;
+                display: flex;
+                justify-content: space-around;
+                padding: 6px 15px;
+                margin-left: -5px;
+                .wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    .priceLabel{
+                        @include text(18px, 400, inherit);   
+                    }
+                    .price {
+                        @include text(30px, 800, 38px);
+                    }
+                }
+                .percent {
+                    border-radius: 50%;
+                    filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.25)) 
+                            drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+                    max-height: 47px;
+                    margin-top: 10px;
+                    transform: translateX(4px);
+                }
+            }
+        }
+    }
+}

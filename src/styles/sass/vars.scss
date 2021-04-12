@@ -1,0 +1,35 @@
+// Colors
+$accentColor: #FC9B09;
+$primaryColor: #fff;
+$secondaryColor: #C7C7C7;
+$textColor: #37373F;
+$textColorLight: #B3B3B3;
+$linkColor: #5286EC;
+
+
+// Breakpoints
+$breakpoints: (
+    xs: 576px,
+    sm: 768px,
+    md: 1280px,
+    lg: 1440px
+);
+
+
+// Container
+%container {
+    padding: 0 15px;
+    @media screen and (min-width: 576px){
+        padding: 0 35px;
+    }
+    @media screen and (min-width: 768px){
+        padding: 0 50px;
+    }
+    @media screen and (min-width: 1280px){
+        padding: 0;
+        width: 100%;
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}
+
