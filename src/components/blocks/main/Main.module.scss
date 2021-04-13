@@ -16,9 +16,9 @@
             @include media(sm) {
                 height: 840px;
             }
-            // @media screen and (min-width: 768px){
-            //     height: 840px;
-            // }
+            @media screen and (min-width: 768px){
+                height: 840px;
+            }
             
             .title{
                 @include text(32px, 700, 39px); 
@@ -27,20 +27,20 @@
                 span {
                     color: $accentColor;
                 }
-                // @media screen and (min-width: 768px){
-                //     max-width: 596px;
-                //     font-size: 40px;
-                //     line-height: 49px;
-                // }
+                @media screen and (min-width: 768px){
+                    max-width: 596px;
+                    font-size: 40px;
+                    line-height: 49px;
+                }
                 @include media(sm) {
                     max-width: 596px;
                     font-size: 40px;
                     line-height: 49px;
                 }
-                // @media screen and (min-width: 1280px){
-                //     max-width: 887px;
-                //     width: 100%;
-                // }
+                @media screen and (min-width: 1280px){
+                    max-width: 887px;
+                    width: 100%;
+                }
                 @include media(md) {
                     max-width: 887px;
                     width: 100%;

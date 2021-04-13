@@ -1,0 +1,31 @@
+@import './../../../styles/sass/vars.scss';
+@import './../../../styles/sass/mixins.scss';
+
+.container {
+    @extend %container;
+    .title {
+        @include text(28px, 400, 34px); 
+        color: $textColor;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 13px;
+        width: 190px;
+        margin: 0 auto;
+    }
+    .photosessionImg {
+        max-width: 100%;
+    }
+    .text {
+        @include text(14px, 400, 20px); 
+        color: $textColor;
+        padding-top: 30px;
+    }
+    .photosessionPrice {
+        padding-top: 25px;
+    }
+
+    .reviews {
+        
+    }
+
+}
