@@ -24,8 +24,15 @@
         padding-top: 25px;
     }
 
-    .reviews {
-        
+    .reviews::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 290px;
+            height: 5px;
+            background: $secondaryColor;
+            position: relative;
+            bottom: 14px;
     }
 
 }
