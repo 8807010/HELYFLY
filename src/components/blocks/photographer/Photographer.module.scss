@@ -1,0 +1,40 @@
+@import './../../../styles/sass/vars.scss';
+@import './../../../styles/sass/mixins.scss';
+
+
+    .container {
+        @extend %container;
+            .photographerInfo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            } 
+            .ava {
+                width: 139px;
+                height: 139px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+            .name {
+                color: $textColor;
+                    @include text(18px, 500, 22px);
+            }
+            .work {
+                color: $textColor;
+                    @include text(14px, 400, 21px);
+            }
+            .moreInfo {
+                color: $linkColor;
+                    @include text(14px, 500, 17px);
+                    text-align: center;
+                    width: 220px;
+            }
+
+
+
+            
+    }
