@@ -1,4 +1,5 @@
 import s from './App.module.scss';
+import Accessibility from './components/blocks/accessibility/Accessibility';
 import Header from './components/blocks/header/Header';
 import Main from './components/blocks/main/Main';
 import Package from './components/blocks/package/Package';
@@ -15,6 +16,7 @@ function App() {
       <Photosession/>
       <Package/>
       <Photographer/>
+      <Accessibility/>
     </div>
     </>
   );

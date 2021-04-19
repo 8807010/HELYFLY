@@ -6,6 +6,7 @@ import marked from './../../../assets/img/marked.svg';
 import speech from './../../../assets/img/speech.svg';
 import PhotosessionPrice from './photosessionPrice/PhotosessionPrice';
 import groupcup from './../../../assets/img/groupcup.svg';
+import star from './../../../assets/img/star.png';
 
 
 
@@ -56,7 +57,17 @@ function Photosession() {
                     </div>
                     <div className={s.reviews}>
                         <img className={s.cap} src={groupcup} alt="cap"/>
-                        <span className={s.reviewsText}>Более 50 отзывов с оценкой </span>
+                        <div className={s.rating}>
+                            <span className={s.reviewsText}>Более 50 отзывов с оценкой </span>
+                            <div className={s.starContainer}>
+                                <img className={s.star} src={star} alt="star"/>
+                                <img className={s.star} src={star} alt="star"/>
+                                <img className={s.star} src={star} alt="star"/>
+                                <img className={s.star} src={star} alt="star"/>
+                                <img className={s.star} src={star} alt="star"/>
+                            </div>
+                        </div>
+                        
                     </div>
 
                 </div>
