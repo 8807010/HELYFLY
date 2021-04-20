@@ -11,12 +11,14 @@ function Package() {
         <div className={s.container}>
             <h2 className={s.title}>Фотографии пакета</h2>
                 <div className={s.packageSlider}>
+                    <img className={s.packageImg} src={packagePhotoHely} alt="PhotoHely"/>
+                    <img className={s.packageImg} src={packagePhotoHely} alt="PhotoHely"/>                    
+                    <img className={s.packageImg} src={packagePhotoHely} alt="PhotoHely"/>
+                    <img className={s.packageImg} src={packagePhotoHely} alt="PhotoHely"/>
                     <img className={s.packageImg} src={packagePhotoEarth} alt="PhotoEarth"/>
                     <img className={s.packageImg} src={packagePhotoEarth} alt="PhotoEarth"/>
                     <img className={s.packageImg} src={packagePhotoGirl} alt="PhotoGirl"/>
                     <img className={s.packageImg} src={packagePhotoGirl} alt="PhotoGirl"/>
-                    <img className={s.packageImg} src={packagePhotoHely} alt="PhotoHely"/>
-                    <img className={s.packageImg} src={packagePhotoHely} alt="PhotoHely"/>
                     <img className={s.packageImg} src={packagePhotoKiss} alt="PhotoKiss"/>
                     <img className={s.packageImg} src={packagePhotoKiss} alt="PhotoKiss"/>
                 </div>
