@@ -4,7 +4,7 @@ import s from './Accessibility.module.scss';
 
 
 
-function Accessibility() {
+function Accessibility(props) {
     return (
         <>
         <div className={s.container}>
@@ -15,7 +15,13 @@ function Accessibility() {
                 <span>850$</span>
                 <span>Осталось — 1 место</span>
                 <button>Выбрать</button>
+            </div>
 
+            <div className={s.photographerInfo}>
+                <span>15:00 - 18:00</span>
+                <span>850$</span>
+                <span>Осталось — 1 место</span>
+                <button>Выбрать</button>
             </div>
 
         </div>
