@@ -26,34 +26,5 @@
     .photosessionPrice {
         padding-top: 25px;
     }
-    .cap {
-        margin-right: 12px;
-    }
-    .reviews {
-        display: flex;
-    }
-    .reviews::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 290px;
-        height: 0.5px;
-        background: $secondaryColor;
-        bottom: -4px;
-    }
-    .reviews::before {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 290px;
-        height: 0.5px;
-        background: $secondaryColor;
-        bottom: 40px;
-    }
-    .rating {
-        display: flex;
-        flex-direction: column;
-    }
-
 
 }
