@@ -5,6 +5,7 @@ import Main from './components/blocks/main/Main';
 import Package from './components/blocks/package/Package';
 import Photographer from './components/blocks/photographer/Photographer';
 import Photosession from './components/blocks/photosession/Photosession';
+import Map from './components/map/Map'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Package/>
       <Photographer/>
       <Accessibility/>
+      <Map/>
     </div>
     </>
   );
