@@ -1,7 +1,7 @@
 import s from './Map.module.scss';
 
 
-function Map(props) {
+function Map() {
     return (
         <div className={s.map}>
             
