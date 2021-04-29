@@ -1,0 +1,17 @@
+.slide {
+    border: 2px red solid;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 274px;
+    }
+    .numberImg {
+        margin-bottom: 20px;
+    }
+    .qustionText {
+        margin-bottom: 10px;
+    }
+    
+
+}
