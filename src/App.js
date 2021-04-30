@@ -6,7 +6,7 @@ import Package from './components/blocks/package/Package';
 import Photographer from './components/blocks/photographer/Photographer';
 import Photosession from './components/blocks/photosession/Photosession';
 import Map from './components/map/Map'
-// import SsimpleSwiper from './components/swiper/SsimpleSwiper';
+import MapSlider from './components/swiper/MapSlider';
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <Photographer/>
       <Accessibility/>
       <Map/>
-      {/* <SsimpleSwiper/> */}
+      <MapSlider/>
     </div>
     </>
   );
