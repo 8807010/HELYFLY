@@ -26,7 +26,8 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 function MapSlider() {
   return (
-    <div className="wrapper">
+    <div className="container">
+       <div className="wrapper">
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
@@ -49,6 +50,8 @@ function MapSlider() {
       
     </Swiper>
     </div>
+    </div>
+   
         );
     };
 
