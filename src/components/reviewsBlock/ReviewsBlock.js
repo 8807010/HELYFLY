@@ -3,6 +3,8 @@ import Reviews from './../../components/reviews/Reviews';
 import review1 from './../../assets/img/rewiew1.png';
 import review2 from './../../assets/img/review2.png';
 import review3 from './../../assets/img/review3.png';
+import ArrowRight from './../../assets/img/ArrowRight.svg';
+import ArrowBottom from './../../assets/img/ArrowBottom.svg';
 
 
 
@@ -33,35 +35,49 @@ function ReviewsBlock() {
 
     return (
         <>
+            <div className={s.container}> 
+                <div className={s.reviewsBlock}>
+                        <div className={s.container}>
+                            <div className={s.inner}>
+                                <Reviews
+                                    imgFoto={data0.imgfoto}
+                                    name={data0.name}
+                                    job={data0.job}
+                                    review={data0.review}
+                                    date={data0.date}
+                                />
+                                <Reviews
+                                    imgFoto={data1.imgfoto}
+                                    name={data1.name}
+                                    job={data1.job}
+                                    review={data1.review}
+                                    date={data1.date}
+                                />
+                                <Reviews
+                                    imgFoto={data2.imgfoto}
+                                    name={data2.name}
+                                    review={data2.review}
+                                    date={data2.date}
+                                />
 
-        <div className={s.reviewsBlock}>
-            <div className={s.container}>
-                <div className={s.inner}>
-                    <Reviews
-                        imgFoto={data0.imgfoto}
-                        name={data0.name}
-                        job={data0.job}
-                        review={data0.review}
-                        date={data0.date}
-                    />
-                    <Reviews
-                        imgFoto={data1.imgfoto}
-                        name={data1.name}
-                        job={data1.job}
-                        review={data1.review}
-                        date={data1.date}
-                    />
-                    <Reviews
-                        imgFoto={data2.imgfoto}
-                        name={data2.name}
-                        review={data2.review}
-                        date={data2.date}
-                    />
+                                <div className={s.moreReviewsRight}>
+                                    <a href="#" className={s.linkReviews}>Показать Все (134)
+                                        <img className={s.arrow} src={ArrowRight} alt="arrow" />
+                                    </a>
+                                </div>
 
-                </div>
+                                <div className={s.moreReviewsBottom}>
+                                    <a href="#" className={s.linkReviews}> 
+                                        <img className={s.arrow} src={ArrowBottom} alt="arrow" />
+                                            Показать Все (134)
+                                        <img className={s.arrow} src={ArrowBottom} alt="arrow" />
+                                    </a>
+                                </div>
+                            
+                            </div>
+                        </div>
+                </div>    
             </div>
-                
-        </div>    
         </>    
 
     );

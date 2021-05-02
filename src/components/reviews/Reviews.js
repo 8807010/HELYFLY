@@ -1,6 +1,7 @@
 import FiveStars from '../fiveStars/FiveStars';
+import GreenWish from '../greenWish/GreenWish';
 import s from './Reviews.module.scss';
-import markGreen from './../../assets/img/markGreen.svg';
+
 
 
 function Reviews(props) {
@@ -8,16 +9,17 @@ function Reviews(props) {
         <>
         <div className={s.container}>
             <div className={s.reviews}>
-                <img src={props.imgFoto} alt="" className={s.foto}/>
-                <span className={s.name}>{props.name}</span>
-                <span className={s.job}>{props.job}</span>
-                <FiveStars/>
-                <div className={s.greenWish}>
-                    <img src={markGreen} alt="" className={s.mark}/>
-                    <span className={s.wish}>Супер! Я бы заказала съемку снова!</span>
+                <div className={s.mainInfo}>
+                    <img className={s.foto} src={props.imgFoto} alt="ava" />
+                    <span className={s.name}>{props.name}</span>
+                    <span className={s.job}>{props.job}</span>
+                    <div className={s.starAndWish}>
+                        <FiveStars/>
+                        <GreenWish/>
+                    </div>
                 </div>
-                <p className={s.review}>{props.review}</p>
-                <span className={s.date}>{s.date}</span>
+                <p className={s.text}>{props.review}</p>
+                <span className={s.time}>{s.date}</span>
             </div>
         </div>
         

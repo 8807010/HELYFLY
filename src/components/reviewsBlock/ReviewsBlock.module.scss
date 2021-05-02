@@ -1,0 +1,14 @@
+@import './../../styles/sass/mixins.scss';
+@import './../../styles/sass/vars.scss';
+
+
+.container {
+    @extend %container;
+}
+
+
+
+// .imgfoto {
+//     width: 84px;
+//     height: 84px;
+// }
