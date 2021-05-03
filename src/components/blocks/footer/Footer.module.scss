@@ -10,8 +10,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 0.5px solid #C7C7C7;
-
+        border-bottom: 0.5px solid $secondaryColor;
+        padding-bottom: 24px;
+        padding-top: 81px;
     }
 
     .socials {
@@ -20,4 +21,35 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    .mc {
+        margin-right: 17px;
+    }
+
+    .footerTopSmall {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 26px;
+        padding-bottom: 24px;
+    }
+
+    .language {
+        display: flex;
+        align-items: center;
+    }
+
+    .lan {
+        margin-right: 6px;
+        @include text(15px, 400, 18px); 
+        color: $textColor;
+    }
+    
+    .footerText {
+        @include text(14px, 400, 27px); 
+        color: $textColorLight;
+        text-align: center;
+        padding-bottom: 20px;
+     
+    }
+    
         

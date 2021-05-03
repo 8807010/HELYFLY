@@ -27,18 +27,21 @@ function Footer() {
                     </div>
                 </div>
                 <div className={s.footerBottom}>
-                    <div className={s.payments}>
-                        <img src={MC} alt="mc" className={s.mc}/>
-                        <img src={VISA} alt="visa" className={s.visa}/>
+                    <div className={s.footerTopSmall}>
+                        <div className={s.payments}>
+                            <img src={MC} alt="mc" className={s.mc}/>
+                            <img src={VISA} alt="visa" className={s.visa}/>
+                        </div>
+                        <div className={s.language}>
+                            <span className={s.lan}>RU</span>
+                            <img className={s.arrow} src={ArrowBottom} alt="arrow" />
+                        </div>
                     </div>
-                    <span>RU
-                        <img className={s.arrow} src={ArrowBottom} alt="arrow" />
-                    </span>
+                    <p className={s.footerText}>
+                        Тех. поддержка: 8(800)700-00-00 <br/>
+                        &copy; 2018 HELYFLY. All Rights Reserved.
+                    </p>
                 </div>
-                <p>
-                    Тех. поддержка: 8(800)700-00-00 <br/>
-                    &copy; 2018 HELYFLY. All Rights Reserved.
-                </p>
                 
             </div>
         </div>
