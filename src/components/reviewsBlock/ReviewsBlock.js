@@ -40,21 +40,21 @@ function ReviewsBlock() {
                         <div className={s.container}>
                             <div className={s.inner}>
                                 <Reviews
-                                    imgFoto={data0.imgfoto}
+                                    imgFoto={data0.imgFoto}
                                     name={data0.name}
                                     job={data0.job}
                                     review={data0.review}
                                     date={data0.date}
                                 />
                                 <Reviews
-                                    imgFoto={data1.imgfoto}
+                                    imgFoto={data1.imgFoto}
                                     name={data1.name}
                                     job={data1.job}
                                     review={data1.review}
                                     date={data1.date}
                                 />
                                 <Reviews
-                                    imgFoto={data2.imgfoto}
+                                    imgFoto={data2.imgFoto}
                                     name={data2.name}
                                     review={data2.review}
                                     date={data2.date}

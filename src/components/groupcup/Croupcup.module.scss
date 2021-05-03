@@ -3,30 +3,43 @@
 
 .cap {
     margin-right: 12px;
+    width: 37px;
+    height: 41px;
 }
 .reviews {
     display: flex;
-}
-.reviews::after {
-    content: "";
-    display: block;
-    position: absolute;
+    align-items: center;
+    border-top: 0.5px solid #C7C7C7;
+    border-bottom: 0.5px solid #C7C7C7;
     width: 290px;
-    height: 0.5px;
-    background: $secondaryColor;
-    bottom: -4px;
+    padding: 14px 0;
 }
-.reviews::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 290px;
-    height: 0.5px;
-    background: $secondaryColor;
-    bottom: 40px;
-}
+// .reviews::after {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     width: 290px;
+//     height: 0.5px;
+//     background: $secondaryColor;
+//     bottom: -4px;
+// }
+// .reviews::before {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     width: 290px;
+//     height: 0.5px;
+//     background: $secondaryColor;
+//     bottom: 40px;
+// }
 .rating {
     display: flex;
     flex-direction: column;
+}
+
+.reviewsText {
+    padding-bottom: 6px;
+    @include text(14px, 400, 20px); 
+    color: $textColor;
 }
 

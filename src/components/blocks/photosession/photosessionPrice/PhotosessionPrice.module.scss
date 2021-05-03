@@ -1,4 +1,18 @@
+@import './../../../../styles/sass/mixins.scss';
+@import './../../../../styles/sass/vars.scss';
+
 .photosessionPrice {
     display: flex;
     align-items: center;
+}
+
+.foto {
+    width: 35px;
+    margin-right: 8px;
+    padding: 9px 0;
+}
+
+.title {
+    @include text(14px, 500, 20px); 
+    color: $textColor;
 }
