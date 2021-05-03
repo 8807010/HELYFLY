@@ -9,6 +9,10 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                position: relative;
+                width: 292px;
+                height: 276px;
+                margin-top: 63px;
             } 
             .ava {
                 width: 139px;
@@ -18,20 +22,55 @@
                 -moz-border-radius: 50%;
                 -ms-border-radius: 50%;
                 -o-border-radius: 50%;
+                // margin-top: 63px;
+                margin-bottom: 23px;
             }
+
+            .like::after {
+                content: "";
+                position: absolute;
+                right: 0px;
+                top: -10px;
+                width: 31px;
+                height: 27px;
+                background-image: url('./../../../assets/img/Heart.svg');
+
+            }
+
             .name {
                 color: $textColor;
-                    @include text(18px, 500, 22px);
+                @include text(18px, 500, 22px);
             }
             .work {
                 color: $textColor;
-                    @include text(14px, 400, 21px);
+                @include text(14px, 400, 21px);
+                padding: 7px 0;
             }
             .moreInfo {
                 color: $linkColor;
-                    @include text(14px, 500, 17px);
-                    text-align: center;
-                    width: 220px;
+                @include text(14px, 500, 21px);
+                text-align: center;
+                width: 220px;
+        }
+
+            .about {
+                color: $textColor;
+                @include text(18px, 500, 26px);
+                padding-bottom: 14px;
+                padding-top: 25px;
+            }
+
+            .aboutText {
+                color: $textColor;
+                @include text(16px, 400, 24px);
+                padding-bottom: 18px;
+            }
+
+            .repr {
+                color: $textColor;
+                @include text(18px, 500, 26px);
+                padding-bottom: 14px;
+                padding-top: 30px;
             }
 
 
