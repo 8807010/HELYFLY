@@ -39,6 +39,7 @@ function ReviewsBlock() {
                 <div className={s.reviewsBlock}>
                         <div className={s.container}>
                             <div className={s.inner}>
+                                <h2 className={s.title}>Отзывы</h2>
                                 <Reviews
                                     imgFoto={data0.imgFoto}
                                     name={data0.name}

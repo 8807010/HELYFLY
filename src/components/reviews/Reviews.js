@@ -11,13 +11,19 @@ function Reviews(props) {
             <div className={s.reviews}>
                 <div className={s.mainInfo}>
                     <img className={s.foto} src={props.imgFoto} alt="ava" />
-                    <span className={s.name}>{props.name}</span>
-                    <span className={s.job}>{props.job}</span>
-                    <div className={s.starAndWish}>
+                    <div className={s.info}>
+                        <span className={s.name}>{props.name}</span>
+                        <span className={s.job}>{props.job}</span>
                         <FiveStars/>
-                        <GreenWish/>
                     </div>
+                    <GreenWish/>
                 </div>
+
+                <div className={s.starAndWish}>
+                    <FiveStars/>
+                    <GreenWish/>
+                </div>
+
                 <p className={s.text}>{props.review}</p>
                 <span className={s.time}>{s.date}</span>
             </div>
