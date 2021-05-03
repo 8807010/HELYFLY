@@ -1,0 +1,23 @@
+@import './../../../styles/sass/vars.scss';
+@import './../../../styles/sass/mixins.scss';
+
+
+    .container {
+        @extend %container;
+    }
+
+    .footerTop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.5px solid #C7C7C7;
+
+    }
+
+    .socials {
+        width: 137px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        

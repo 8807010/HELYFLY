@@ -1,5 +1,6 @@
 import s from './App.module.scss';
 import Accessibility from './components/blocks/accessibility/Accessibility';
+import Footer from './components/blocks/footer/Footer';
 import Header from './components/blocks/header/Header';
 import Main from './components/blocks/main/Main';
 import Package from './components/blocks/package/Package';
@@ -23,6 +24,7 @@ function App() {
       <Map/>
       <MapSlider/>
       <ReviewsBlock/>
+      <Footer/>
     </div>
     </>
   );
