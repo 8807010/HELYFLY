@@ -2,17 +2,21 @@
 @import './../../../styles/sass/mixins.scss';
 
 
+
     .container {
         @extend %container;
     }
 
     .footerTop {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         border-bottom: 0.5px solid $secondaryColor;
         padding-bottom: 24px;
         padding-top: 81px;
+    }
+
+    .topInner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .socials {
@@ -26,11 +30,17 @@
         margin-right: 17px;
     }
 
-    .footerTopSmall {
+    .footerBottomMob {
+        @media screen and (min-width: 576px) {
+            display: none;
+        }
+    }
+
+    .footerBottomSmall {
         display: flex;
         justify-content: space-between;
         padding-top: 26px;
-        padding-bottom: 24px;
+        
     }
 
     .language {
@@ -49,7 +59,27 @@
         color: $textColorLight;
         text-align: center;
         padding-bottom: 20px;
-     
+        padding-top: 24px;
+        @media screen and (min-width: 576px){
+            padding: 17px 0;
+        }
     }
-    
+
+    .footerBottom {
+        display: none;
         
+        @media screen and (min-width: 576px){
+            display: block;
+            background-color: #FAF9F8;
+            background-size: cover;
+            max-width: 100%;
+        }
+    }
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
