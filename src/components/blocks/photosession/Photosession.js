@@ -54,7 +54,10 @@ function Photosession() {
                             title={data3.title}
                         />
                     </div>
-                    <Groupcup/>
+                    <div className={s.groupcup}>
+                        <Groupcup/>
+                    </div>
+                   
 
                 </div>
             </div>

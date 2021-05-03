@@ -1,9 +1,64 @@
-.map {
+@import './../../styles/sass/vars.scss';
+@import './../../styles/sass/mixins.scss';
+
+.inner {
     width: 1553px;
     height: 423px;
     max-width: 100%;
     background-image: url(./../../assets/img/map.png);
     background-size: cover;
-    background-position: 57%, 50%;
+    background-position: 58%, 50%;
     background-repeat: no-repeat;
+    margin-bottom: 52px;
 }
+
+.container {
+    @extend %container;
+}
+
+.photographerInfo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+} 
+.ava {
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name {
+    color: $textColor;
+    @include text(16px, 500, 20px);
+}
+.work {
+    color: $textColor;
+    @include text(14px, 400, 21px);
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+.moreInfo {
+    color: $linkColor;
+    @include text(14px, 500, 21px);
+    width: 156px;
+    padding-bottom: 20px;
+}
+
+.phInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.slider {
+    border: 1px solid $secondaryColor;
+}
+
