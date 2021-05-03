@@ -1,0 +1,13 @@
+@import './../../styles/sass/vars.scss';
+@import './../../styles/sass/mixins.scss';
+
+.btn {
+    width: 129px;
+    height: 50px;
+    border: 2px solid $accentColor;
+    border-radius: 3px;
+    background-color: transparent;
+    @include text (14px, 500, 17px);
+    color: $accentColor;
+}        
+    

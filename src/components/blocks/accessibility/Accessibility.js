@@ -1,5 +1,6 @@
 import s from './Accessibility.module.scss';
 import Groupcup from '../../groupcup/Groupcup';
+import ButtonChoise from './../../buttonChoise/ButtonChoise';
 
 
 
@@ -10,19 +11,22 @@ function Accessibility(props) {
         <>
         <div className={s.container}>
             <div className={s.photographerInfo}>
-                <h2 className={s.title}>Доступная съемка в ближайщее время</h2>
-                <span>Пятница, 14 сентября</span>
-                <span>15:00 - 18:00</span>
-                <span>850$</span>
-                <span>Осталось — 1 место</span>
-                <button>Выбрать</button>
+                <h2 className={s.title}>Доступная съемка<br/>в ближайщее время</h2>
+                <div>
+                    <span className={s.date}>Пятница, 14 сентября</span>
+                    <span className={s.time}>15:00 - 18:00</span>
+                    <span className={s.cost}>850$</span>
+                    <span className={s.rest}>Осталось — 1 место</span>
+                    <ButtonChoise/>
+                </div>
+                
             </div>
 
             <div className={s.photographerInfo}>
-                <span>15:00 - 18:00</span>
-                <span>850$</span>
-                <span>Осталось — 1 место</span>
-                <button>Выбрать</button>
+                <span className={s.time}>15:00 - 18:00</span>
+                <span className={s.cost}>850$</span>
+                <span className={s.rest}>Осталось — 1 место</span>
+                <ButtonChoise/>
             </div>
 
         </div>
