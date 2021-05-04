@@ -16,9 +16,13 @@
         color: $textColor;
         padding: 40px 0;
         text-align: center;
+        @media screen and (min-width: 768px) {
+            @include text(20px, 500, 30px); 
+            text-align: start;
+        }
     }
 
-    .photographerInfo {
+    .info {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -35,6 +39,13 @@
         @include text(18px, 400, 26px); 
         color: $textColor;
         border-collapse: collapse;
+        @media screen and (min-width: 576px) {
+            text-align: start;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            
+        }
     }
 
     .time {
@@ -52,4 +63,28 @@
     .groupcup {
         padding-left: 20px;
     }
+
+    .linkCalk {
+        display: none;
+        @media screen and (min-width: 576px) {
+           padding: 0;
+            display: block;
+        }
+        
+        .calend {
+            @media screen and (min-width: 576px) {
+           padding-left: 14px;
+        }
+    }
+
     
+    
+    }
+    .photographerInfo {
+        display: flex;
+            justify-content: space-between;
+        @media screen and (min-width: 576px) {
+            
+            align-items: center;
+        }
+    }

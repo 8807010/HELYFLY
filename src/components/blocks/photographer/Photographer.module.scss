@@ -13,6 +13,7 @@
                 width: 292px;
                 height: 276px;
                 margin-top: 63px;
+                order: 1;
             } 
             .ava {
                 width: 139px;
@@ -64,6 +65,10 @@
                 color: $textColor;
                 @include text(16px, 400, 24px);
                 padding-bottom: 18px;
+                @media screen and (min-width: 1280px) {
+                     max-width: 584px;   
+
+                }
             }
 
             .repr {
@@ -71,6 +76,15 @@
                 @include text(18px, 500, 26px);
                 padding-bottom: 14px;
                 padding-top: 30px;
+            }
+
+            .wrapper {
+                @media screen and (min-width: 1280px) {
+                    display: flex; 
+                    justify-content: space-between;
+                   
+
+               }
             }
 
 

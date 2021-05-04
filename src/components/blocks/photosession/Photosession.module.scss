@@ -14,14 +14,42 @@
         padding-bottom: 13px;
         width: 190px;
         margin: 0 auto;
+        @media screen and (min-width: 768px) {
+            @include text(40px, 500, 49px); 
+            padding-top: 50px;
+            padding-bottom: 40px;
+            width: 671px;
+        }
+        @media screen and (min-width: 1280px) {
+            padding-bottom: 18px;
+            padding-top: 0;
+            text-align: start;
+
+        
+        }
     }
     .photosessionImg {
         max-width: 100%;
+        @media screen and (min-width: 768px) {
+            width: 100%;
+        }
+        @media screen and (min-width: 1280px) {
+            display: none;
+        }
+        
     }
     .text {
         @include text(14px, 400, 20px); 
         color: $textColor;
         padding-top: 30px;
+        @media screen and (min-width: 576px) {
+            max-width: 480px;
+            @include text(18px, 400, 26px); 
+        }
+            @media screen and (min-width: 1280px) {
+                padding: 0;
+            }
+    
     }
     .photosessionPrice {
         padding-top: 25px;
@@ -31,7 +59,29 @@
     .groupcup {
         border-top: 0.5px solid #C7C7C7;
         border-bottom: 0.5px solid #C7C7C7;
-        width: 290px;
+        width: 100%;
+        @media screen and (min-width: 1280px) {
+            max-width: 570px;
+        }
+    }
+    .wrapper {
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            justify-content: center;
+            padding-top: 71px;
+        }
+    }
+    .photoImg {
+        width: 554px;
+        height: 374px;
+        
+    }
+
+    .img {
+        display: none;
+        @media screen and (min-width: 1280px) {
+            display: block;
+        }
     }
     
 

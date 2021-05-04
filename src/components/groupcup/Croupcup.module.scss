@@ -1,6 +1,8 @@
 @import './../../styles/sass/vars.scss';
 @import './../../styles/sass/mixins.scss';
 
+
+
 .cap {
     margin-right: 12px;
     width: 37px;
@@ -13,6 +15,13 @@
     // border-bottom: 0.5px solid #C7C7C7;
     // width: 290px;
     padding: 14px 0;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+
+    }
+
+    
 }
 // .reviews::after {
 //     content: "";
@@ -35,11 +44,20 @@
 .rating {
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+      
+
+    }
 }
 
 .reviewsText {
     padding-bottom: 6px;
     @include text(14px, 400, 20px); 
     color: $textColor;
+    @media screen and (min-width: 768px) {
+        margin-right: 15px;
+    }
 }
 

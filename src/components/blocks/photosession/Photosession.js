@@ -32,34 +32,41 @@ function Photosession() {
 
         <div className={s.photosession}>
             <div className={s.container}>
-                <div className={s.inner}>
-                    <h2 className={s.title}>Фотосессия в вертолете</h2>
-                    <img className={s.photosessionImg} src={photosession} alt="photosession"/>
-                    <p className={s.text}>Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие моменты!</p>
-                    <div className={s.photosessionPrice}>
-                        <PhotosessionPrice
-                            foto={data0.foto}
-                            title={data0.title}
-                        />
-                        <PhotosessionPrice
-                            foto={data1.foto}
-                            title={data1.title}
-                        />
-                        <PhotosessionPrice
-                            foto={data2.foto}
-                            title={data2.title}
-                        />
-                        <PhotosessionPrice
-                            foto={data3.foto}
-                            title={data3.title}
-                        />
+                <div className={s.wrapper}>
+                    <div className={s.inner}>
+                        <h2 className={s.title}>Фотосессия <br/> в вертолете</h2>
+                        <img className={s.photosessionImg} src={photosession} alt="photosession"/>
+                        <p className={s.text}>Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие моменты!</p>
+                        <div className={s.photosessionPrice}>
+                            <PhotosessionPrice
+                                foto={data0.foto}
+                                title={data0.title}
+                            />
+                            <PhotosessionPrice
+                                foto={data1.foto}
+                                title={data1.title}
+                            />
+                            <PhotosessionPrice
+                                foto={data2.foto}
+                                title={data2.title}
+                            />
+                            <PhotosessionPrice
+                                foto={data3.foto}
+                                title={data3.title}
+                            />
+                        </div>
+                        
+                        <div className={s.groupcup}>
+                            <Groupcup/>
+                        </div>
                     </div>
-                    <div className={s.groupcup}>
-                        <Groupcup/>
+                    <div className={s.img}>
+                        <img className={s.photoImg} src={photosession} alt="photosession"/>
                     </div>
-                   
-
                 </div>
+                
+               
+                
             </div>
                 
         </div>    
