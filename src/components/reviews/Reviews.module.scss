@@ -1,18 +1,72 @@
-.foto {
+@import './../../styles/sass/mixins.scss';
+@import './../../styles/sass/vars.scss';
+
+
+// .reviews {
+//     border-bottom: 0.5px solid $secondaryColor;
+//     width: 100%;
+// }
+
+.imgFoto {
     width: 84px;
     height: 84px;
+    margin-right: 18px;
+}
+
+.fotoInfo {
+    display: flex;
+    align-items: center;
 }
 
 .starAndWish {
+    max-width: 630px;
+    margin-top: 30px;
     display: none;
     @media screen and (min-width: 768px) {
-        display: block;
+        display: flex;
+        .both {
+            display: flex;
+            align-items: center;
+            padding-top: 4px;
+            padding-bottom: 20px;
+
+        }
+        .stars {
+            padding-right: 50px;
+        }
     }
 }
 
-.infoinfo {
+.mainInfo {
     display: block;
+    margin-top: 30px;
     @media screen and (min-width: 768px) {
         display: none;
     }
+}
+
+.name {
+    @include text(16px, 500, 20px); 
+    color: $textColor;
+}
+
+.job {
+    @include text(14px, 400, 21px); 
+    color: $textColor;
+    padding: 6px 0;
+}
+
+.text {
+    @include text(14px, 400, 21px); 
+    color: $textColor;
+   
+}
+
+.date {
+    @include text(14px, 400, 21px);
+    color: $textColorLight;
+    padding-top: 20px;
+    padding-bottom: 40px; 
+    border-bottom: 0.5px solid $secondaryColor;
+    width: 100%;
 }

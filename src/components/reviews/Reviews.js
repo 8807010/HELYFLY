@@ -9,23 +9,50 @@ function Reviews(props) {
         <>
         <div className={s.container}>
             <div className={s.reviews}>
+
                 <div className={s.mainInfo}>
-                    <img className={s.foto} src={props.imgFoto} alt="ava" />
-                    <div className={s.info}>
-                        <span className={s.name}>{props.name}</span>
-                        <span className={s.job}>{props.job}</span>
-                        <FiveStars/>
+                    <div className={s.fotoInfo}>
+                        <div className={s.imgFoto}>
+                            <img className={s.foto} src={props.imgFoto} alt="ava" />
+                        </div>
+                        <div className={s.info}>
+                            <p className={s.name}>{props.name}</p>
+                            <p className={s.job}>{props.job}</p>
+                            <FiveStars/>
+                        </div>
                     </div>
                     <GreenWish/>
+                    <p className={s.text}>{props.review}</p>
+                    <p className={s.date}>{props.date}</p>
                 </div>
+
+
+
+
 
                 <div className={s.starAndWish}>
-                    <FiveStars/>
-                    <GreenWish/>
+                    <div className={s.imgFoto}>
+                        <img className={s.foto} src={props.imgFoto} alt="ava" />
+                    </div>
+                    <div className={s.mainBlock}>
+                        <div className={s.common}>
+                            <p className={s.name}>{props.name}</p>
+                            <p className={s.job}>{props.job}</p>
+                            <div className={s.both}>
+                                <div className={s.stars}>
+                                     <FiveStars/>
+                                </div>
+                               
+                                <GreenWish/>    
+                            </div>
+                        </div>
+                        <p className={s.text}>{props.review}</p>
+                        <p className={s.date}>{props.date}</p>
+                    </div>
+                    
                 </div>
 
-                <p className={s.text}>{props.review}</p>
-                <span className={s.time}>{s.date}</span>
+                
             </div>
         </div>
         

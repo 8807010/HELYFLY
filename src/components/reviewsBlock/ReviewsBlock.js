@@ -35,7 +35,7 @@ function ReviewsBlock() {
 
     return (
         <>
-            <div className={s.container}> 
+            <div className={s.wrapper}> 
                 <div className={s.reviewsBlock}>
                         <div className={s.container}>
                             <div className={s.inner}>
