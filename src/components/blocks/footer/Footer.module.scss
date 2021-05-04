@@ -11,6 +11,18 @@
         border-bottom: 0.5px solid $secondaryColor;
         padding-bottom: 24px;
         padding-top: 81px;
+        @media screen and (min-width: 768px) {
+            padding-top: 47px
+        }
+    }
+
+    .logo {
+        height: 16px;
+        width: 84px;
+        @media screen and (min-width: 576px) {
+            height:23px;
+            width: 129px;
+        }
     }
 
     .topInner {

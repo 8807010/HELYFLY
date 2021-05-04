@@ -21,6 +21,28 @@
 }
 
 .moreReviewsRight {
-    
+    display: block;
+    text-align: center;
+    color: $linkColor;
+    @include text(17px, 500, 25px);
+    margin-top: 40px;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
+.arrow {
+    margin: 0 7px;
+}
+
+.moreReviewsBottom {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+        color: $linkColor;
+        @include text(17px, 500, 25px);
+        padding-top: 40px;
+        text-align: center;
+    }
+
+}
