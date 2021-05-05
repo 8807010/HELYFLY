@@ -1,0 +1,56 @@
+@import './../../styles/sass/vars.scss';
+@import './../../styles/sass/mixins.scss';
+
+
+
+.mapInfo {
+    display: none;
+    @media screen and (min-width: 1280px) {
+        display: block;
+
+    }
+}
+
+.wrapper {
+    width: 420px;
+    height: 470px;
+    border: 1px solid $secondaryColor;
+    background-color: #fff;
+    padding: 50px 34px 54px 30px;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+.numberImg {
+    width: 61px;
+    height: 61px;
+    margin-right: 18px;
+}
+
+.ava {
+    width: 67px;
+    height: 67px;
+    margin-right: 10px;
+}
+
+.qustionText, .name {
+    color: $textColor;
+    @include text(18px, 500, 27px);
+}
+
+.place, .work {
+    color: $textColor;
+    @include text(18px, 400, 26px);
+}
+
+.moreInfo{
+    color: $linkColor;
+    @include text(14px, 500, 21px);
+}
+
+
+

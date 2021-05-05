@@ -9,17 +9,23 @@
     background-position: 58%, 50%;
     background-repeat: no-repeat;
     margin-bottom: 52px;
+    @media screen and (min-width: 576px) {
+        height: 509px;
+    }
 }
 
-.container {
-    @extend %container;
+.mapInfo {
+    display: none;
+    @media screen and (min-width: 1280px) {
+        display: block;
+    }
 }
 
 .photographerInfo {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 40px;
+    padding-top: 10px;
     padding-bottom: 20px;
 
 } 
@@ -58,5 +64,23 @@
 
 .slider {
     border: 1px solid $secondaryColor;
+    width: 100%;
+    max-width: 400px;
+    height: 380px;
+    margin: 0 auto;
+    @media screen and (min-width: 1280px) {
+        display: none;
+
+    }
+
 }
 
+.mapInfo {
+    width: 420px;
+    height: 470px;
+    padding: 20px 0;
+}
+
+.container {
+    @extend %container;
+}
