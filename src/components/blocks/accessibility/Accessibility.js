@@ -22,24 +22,31 @@ function Accessibility(props) {
 
                 <div className={s.photographerInfo}>
                     <div className={s.info}>
-                        <span className={s.time}>15:00 - 18:00</span>
-                        <span className={s.cost}>850$</span>
-                        <span className={s.rest}>Осталось — 1 место</span>
+                        <div className={s.mainInfo}>
+                            <p className={s.time}>15:00 - 18:00</p>
+                            <p className={s.cost}>850$</p>
+                            <p className={s.rest}>Осталось — 1 место</p> 
+                        </div>
+                        
+                        <div className={s.btn}>
+                            <ButtonChoise/>
+                        </div>
                     </div>
-                    <div className={s.btn}>
-                        <ButtonChoise/>
-                    </div>
+                   
                 </div>
                     
 
                 <div className={s.photographerInfo}>
-                    <div className={s.info}>
-                        <span className={s.time}>15:00 - 18:00</span>
-                        <span className={s.cost}>850$</span>
-                        <span className={s.rest}>Осталось — 1 место</span>
-                    </div>
-                    <div className={s.btn}>
-                        <ButtonChoise/>
+                <div className={s.info}>
+                        <div className={s.mainInfo}>
+                            <p className={s.time}>15:00 - 18:00</p>
+                            <p className={s.cost}>850$</p>
+                            <p className={s.rest}>Осталось — 1 место</p> 
+                        </div>
+                        
+                        <div className={s.btn}>
+                            <ButtonChoise/>
+                        </div>
                     </div>
                     
                 </div>

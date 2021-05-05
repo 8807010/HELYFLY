@@ -9,6 +9,8 @@
     .table {
         border: 1px solid $secondaryColor;
         margin-bottom: 45px;
+        width: 100%;
+        max-width: 770px;
     }
 
     .title {
@@ -19,6 +21,10 @@
         @media screen and (min-width: 768px) {
             @include text(20px, 500, 30px); 
             text-align: start;
+            border-top: 1px solid $secondaryColor;
+            margin-top: 50px;
+            width: 100%;
+            max-width: 1139px;
         }
     }
 
@@ -29,7 +35,15 @@
         align-items: flex-start;
         padding-left: 20px;
         border-bottom: 1px solid $secondaryColor;
+        width: 100%;
+        max-width: 770px;
         padding-bottom: 30px;
+        @media screen and (min-width: 576px) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
     }
 
     .date {
@@ -87,4 +101,12 @@
             
             align-items: center;
         }
+    }
+
+    .btn {
+        margin-right: 20px;
+        @media screen and (min-width: 768px) {
+            margin-right: 30px;
+        }
+
     }
