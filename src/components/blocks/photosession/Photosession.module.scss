@@ -36,6 +36,7 @@
     max-width: 100%;
     @media screen and (min-width: 768px) {
         width: 100%;
+        margin: 0 auto;
     }
     @media screen and (min-width: 1280px) {
         display: none;
@@ -78,11 +79,6 @@
         justify-content: center;
         padding-top: 71px;
     }
-}
-
-.photoImg {
-    width: 554px;
-    height: 374px;
 }
 
 .img {
