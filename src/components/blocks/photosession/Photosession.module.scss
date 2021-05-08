@@ -7,6 +7,11 @@
 
 .inner {
     position: relative;
+    @media screen and (min-width: 1280px) {
+        width: 100%;
+        max-width: 530px;
+        margin: 0 auto;
+    }
 }
 
 .title {
@@ -27,8 +32,6 @@
         padding-bottom: 18px;
         padding-top: 0;
         text-align: start;
-
-    
     }
 }
 
